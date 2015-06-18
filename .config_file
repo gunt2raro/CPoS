@@ -8,9 +8,9 @@
 
 [database]:
 	[url]:'localhost';
-	[user_name]:'username';
-	[password]:'password';
-	[db_name]:'db_name';
+	[user_name]:'root';
+	[password]:'itic123';
+	[db_name]:'db_CPoS';
 [/database];
 
 

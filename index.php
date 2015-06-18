@@ -18,12 +18,27 @@
   <body>
     <header class="page-header">
 
-      <h1>CPoS</h1>
+      <div class="row">
 
+        <div class="col-md-6">
+          <div class="col-md-2">
+              <img src="http://shop.stoketravel.com/img/store-name-1433500747.jpg" class="img-responsive logo" alt="Stoke Travel">
+          </div>
+          <div class="col-md-2">
+              <h1 class="title">CPoS</h1>
+          </div>
+        </div>
+        <div class="col-md-6"></div>
+      </div>
     </header>
 
     <div class="container">
-        Here goes everything!!
+        <div class="row">
+
+          <div class="col-md-4">Date Piker goes here</div>
+          <div class="col-md-8">CPoS goes here</div>
+
+        </div>
     </div>
 
     <footer class="footer">
