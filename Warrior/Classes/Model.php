@@ -1,5 +1,5 @@
 <?php
-	require_once $_SERVER['DOCUMENT_ROOT'].'/MySQL/connection.php';
+	require_once $_SERVER['DOCUMENT_ROOT'].'/Calendar/Warrior/MySQL/connection.php';
 
 	class Model{
 
@@ -21,6 +21,42 @@
 		     $this->keys = array();
 		     $this->keys = $this->get_keys( );
 	      }//End of __construct function
+
+              /***
+              * getByAttr_json
+              * return a json of the objects that conten all the same shit we are looking for
+              *************************************/
+              public function getByAttr_json( $attr, $value ){
+
+                $all = json_decode( $this->getAll_json(), true );
+                $return = array();
+                foreach( (array)$all as $r ){
+                         if( $r[$attr] == $value ){
+                             array_push( $return, $r );
+                         }
+                }
+                return json_encode( $return );
+
+              }//End of getByAttr_json function
+
+              /***
+              *
+              *
+              *
+              *****************************/
+              public function getAll_json(){
+                     $conn = connection();
+                     $query = "CALL get_all_".get_class( $this );
+                     $allObj = mysqli_query( $conn, $query );
+                     $jsonReturn = array();
+                     while( $r = mysqli_fetch_array( $allObj ) ){
+                            array_push( $jsonReturn, $r );
+                     }
+
+                     close( $conn );
+                     return json_encode( $jsonReturn );
+              }//End of getAll_json function
+
 
 	      /***
 	      * getByAttr
