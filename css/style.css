@@ -5,6 +5,7 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+
 }
 .footer {
   position: absolute;
@@ -12,11 +13,11 @@ body {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 60px;
-  margin-left : 100px;
+  color : #205766;
 }
 
 .page-header{
-  margin-left : 50px;
+
 }
 
 body > .container {
@@ -31,6 +32,97 @@ body > .container {
   padding-left: 15px;
 }
 
+.logo {
+
+	margin-top : -50px;
+	width : 30%;
+
+}
+.iconsAS{
+
+	margin-left : 100px;
+
+}
+
 .title{
+
+	display : inline;
+
+}
+
+.container{
+
+
+
+}
+
+.event-CPoS{
+
+	width : 100%;
+	text-align: left;
+
+}
+
+.element-des {
+
+	display : none;
+
+}
+
+.element-des > p{
+
+	height : auto;
+	max-width :  100%;
+	text-align: justify;
+    	text-justify: inter-word;
+}
+
+.e-content{
+
+	max-height : 1000px;
+	overflow: scroll;
+	overflow-y : auto;
+	overflow-x : auto;
+
+}
+.navbar-default{
+
+	height : 100px;
+	color : #ebef09;
+	background-color : rgba( 0, 0, 0, 0.5);
+
+}
+.container-fluid > a, .navbar-default > a {
+
+	color : #ebef09;
+
+}
+.container-fluid{
+
+	margin-top : 50px;
+	height : 100px;
+	color : #ebef09;
+
+}
+
+#din_title{
+
+	color : #205766;
+
+}
+
+.date_div{
+
+	margin-right : 50px;
+}
+
+.datepicker-days{
+
+	background-color : #fff;
+
+}
+.thumbnail img {
+
+	height : 161px;
 
 }

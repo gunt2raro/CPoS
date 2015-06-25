@@ -1,6 +1,6 @@
 <?php
 
- 	require_once( $_SERVER['DOCUMENT_ROOT'].'/Warrior/Classes/Model.php' );
+ 	require_once( $_SERVER['DOCUMENT_ROOT'].'/Calendar/Warrior/Classes/Model.php' );
 
 	//Class Event Model
 	class Event extends Model {

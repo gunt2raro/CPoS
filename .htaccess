@@ -1,0 +1,9 @@
+Options +FollowSymLinks -MultiViews
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+RewriteBase /
+
+RewriteRule ^Views/(.*)$ /$1 [L,NC,R]

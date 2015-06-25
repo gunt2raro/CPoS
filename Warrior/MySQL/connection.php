@@ -1,5 +1,5 @@
 <?php
-	
+
         /***
         * connection
         * Method that connects to mysql database
@@ -7,7 +7,7 @@
         * return connection
         *********************/
         function connection( ){
-                $xml = simplexml_load_file( $_SERVER['DOCUMENT_ROOT']."/Warrior/MySQL/config.xml" );
+                $xml = simplexml_load_file( $_SERVER['DOCUMENT_ROOT']."/Calendar/Warrior/MySQL/config.xml" );
 
                 $url = $xml->connection->url;
                 $user = $xml->connection->user_name;
@@ -42,7 +42,7 @@
         * @return string with db_name
         ************************************/
         function get_db_name(){
-               $xml = simplexml_load_file( $_SERVER['DOCUMENT_ROOT']."/Warrior/MySQL/config.xml" );
+               $xml = simplexml_load_file( $_SERVER['DOCUMENT_ROOT']."/Calendar/Warrior/MySQL/config.xml" );
                return $xml->connection->db_name;
         }//End of get_db_name function
 

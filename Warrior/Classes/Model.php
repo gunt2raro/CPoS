@@ -101,7 +101,7 @@
 				     if( is_numeric( $v ) ){
 				     	 $query .= $v;
 			             }else if( is_string( $v ) ){
-				    	  $query .= "'".$v."'";
+				    	  $query .= "'". mysql_real_escape_string( $v ) ."'";
 				     } else if( is_bool( $v ) ){
 				          if( $v ){
 				     	      $query .= "1";
@@ -137,17 +137,19 @@
 	      * @return none
 	      **********************/
 	      public function save(){
+
 	      	     $conn = connection( );
 		     $query = "CALL save_".get_class( $this )."(";
 
 		     $i = 0;
 
 	      	     foreach( (array)$this->attrs as $k => $v ){
+
 		     	   if( $k != 'attrs' && $k != 'keys' ){
 			      if( is_numeric( $v ) ){
 			      	$query .= $v;
 			      } else if( is_string( $v ) ){
-			      	$query .= ("'".$v."'" );
+			      	$query .= ( "'" . mysql_real_escape_string( $v ) . "'" );
 			      } else if( is_bool( $v ) ){
 			      	if( $v ){
 				    $query .= 1;
@@ -164,6 +166,7 @@
 			   }
 
 		     }$query .= ")";
+
 		     mysqli_query( $conn, $query );
 
 	             close( $conn );
