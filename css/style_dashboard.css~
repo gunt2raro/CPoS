@@ -1,0 +1,65 @@
+.btn-new, .btn-save, .btn-archived{
+
+	width : 60%;
+
+}
+
+.archive-btn, .unarchive-btn, .datepiker-event-dates{
+
+	display : none;
+
+}
+
+.element #title {
+
+	display : none;
+
+}
+
+.btn-new, .btn-save, .btn-archived {
+
+	width : 80%;
+
+}
+
+.inner {
+
+	margin: 25px 25px 25px 25px;
+	background-color : rgb( 230, 230, 230 );
+	border-radius: 25px;
+
+}
+
+.tools {
+
+	width : 100%;
+
+}
+
+.e-content{
+
+	margin-top : 25px;
+	background-color : rgb( 230, 230, 230 );
+	border-radius: 19px;
+}
+
+ body {
+        background-image: url("http://cpos.zz.mu/images/escheresque_ste.png");
+
+    }
+
+.event-CPoS{
+
+	width: 85%;
+	margin-top : 10px;
+	margin-bottom : -5px;
+
+}
+
+.row.din_title {
+
+	background-color : rgb( 230, 230, 230 );
+	border-radius: 19px;
+	font-weight: bold;
+
+}

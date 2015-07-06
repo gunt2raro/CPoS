@@ -23,18 +23,13 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-
     <link rel="stylesheet" href="bootstrap-datepicker/css/bootstrap-datepicker.css"/>
     <link href="css/shop-homepage.css" rel="stylesheet">
-
-    <link rel="icon" type="image/png" href="/assets/favicons/favicon-16x16.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="/assets/favicons/favicon-32x32.png" sizes="32x32">
 
 </head>
 
 <body>
-    <div class="popup_preview_box" id="popup_preview_box_id" >Hi.</div>
+
     <input style="display:none" id="token"  type="text" value="<?php print($_SESSION['token']);?>"/>
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -75,55 +70,51 @@
     <div class="container">
 
         <div class="row">
+
             <div class="col-md-3">
-
-	    	<div class="inner">
-		        <p class="lead din_title"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Chose a date!</p>
-			<div class="datepicker"></div><br />
-		        <div class="list-group e-content">
-				<legend id="events-box-info" style="color:#205766;font-weight:bold;">Events On </legend>
-			</div>
+                <p class="lead din_title"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Chose a date!</p>
+		<div class="datepicker"></div><br />
+                <div class="list-group e-content">
+			<legend id="events-box-info" style="color:#205766;font-weight:bold;">Events On </legend>
 		</div>
-
             </div>
 
             <div class="col-md-9">
-		<div class="inner">
-		        <div class="row carousel-holder">
 
-		            <div class="col-md-12">
-		                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-		                    <ol class="carousel-indicators">
-		                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-		                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-		                    </ol>
-		                    <div class="carousel-inner">
-		                        <div class="item active">
-		                            <img class="slide-image" src="http://localhost/Calendar/images/slider_1.jpg" alt="">
-		                        </div>
-		                        <div class="item">
-		                            <img class="slide-image" src="http://localhost/Calendar/images/slider_2.jpg" alt="">
-		                        </div>
-		                    </div>
-		                    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-		                        <span class="glyphicon glyphicon-chevron-left"></span>
-		                    </a>
-		                    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-		                        <span class="glyphicon glyphicon-chevron-right"></span>
-		                    </a>
-		                </div>
-		            </div>
+                <div class="row carousel-holder">
 
-		        </div><br />
-			<div class="row">
-				<h2 id="din_title">Events</h2>
-			</div><br/>
-		        <div class="row e-happening-now"></div>
-		</div>
+                    <div class="col-md-12">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img class="slide-image" src="http://localhost/Calendar/images/slider_1.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="slide-image" src="http://localhost/Calendar/images/slider_2.jpg" alt="">
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div><br />
+		<div class="row">
+			<h2 id="din_title">Events</h2>
+		</div><br/>
+                <div class="row e-happening-now"></div>
+
             </div>
 
         </div>
-
 	 <hr>
 
         <!-- Footer -->
@@ -141,7 +132,6 @@
 
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <script src="bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
     <script src="js/script.js"></script>
 

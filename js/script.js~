@@ -82,7 +82,7 @@ function day_action(){
 		date = day + "/" + getMonthNumber(month) + "/" + year;
 	}
 
-	$( '.e-happening-now' ).html( '' );
+
 	$( '#events-box-info' ).html( '<span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> T Happening On ' + month + ' ' + day + ' ' + year );
 
 	$.ajax({

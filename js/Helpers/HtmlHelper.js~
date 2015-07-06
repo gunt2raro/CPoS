@@ -1,0 +1,42 @@
+var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "Noviembre", "Diciembre"];
+
+/***
+* create_event_preview_admin
+* function that works for creating the event html on the admin view of the system
+* @param evento -  an event json object
+* @return String
+***********************************************/
+function create_event_preview( evento ){
+
+	var html = [];
+
+	html.push(
+		"<div class='element' id='",
+			evento['eventid'],
+		"' >",
+			"<button type='button' class='btn btn-default btn-lg event-CPoS'>",
+				"<span class='glyphicon glyphicon-bookmark' aria-hidden='true'></span>",
+					evento['title'],
+				"&nbsp;&nbsp;( Starts on : ",
+					evento['dateini'],
+				" ) - ( Finishes on : ",
+					evento['datefin'],
+				" )",
+			"</button>",
+			"<div class='element-des'><p>",
+				evento['description'],
+			"</p></div>",
+		"</div>"
+	);
+
+	return html.join("");
+
+}//End create_event_preview
+
+
+
+function getMonthNumber( month ){
+
+	return months.indexOf( month );
+
+}//End of getMonthNumber function
